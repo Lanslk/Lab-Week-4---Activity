@@ -13,6 +13,11 @@ public class LoadAssets : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        // Limit framerate to cinematic 60fps.
+        QualitySettings.vSyncCount = 0; // Set vSyncCount to 0 so that using .targetFrameRate is enabled.
+        Application.targetFrameRate = 60;
+
         Instantiate(redObj, new Vector3(2, 0, 0), Quaternion.identity);
         Instantiate(blueObj, new Vector3(-2, 0, 0), Quaternion.identity);
     }

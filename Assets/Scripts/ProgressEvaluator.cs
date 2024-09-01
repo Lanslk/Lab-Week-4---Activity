@@ -1,10 +1,6 @@
-<<<<<<< Updated upstream
-#define Pass60
-#define HD90
-=======
 define Pass60
 define HD90
->>>>>>> Stashed changes
+
 
 using System;
 using System.Collections;
